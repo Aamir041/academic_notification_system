@@ -1,9 +1,7 @@
 import { View, Text, TouchableOpacity, TextInput, StyleSheet } from 'react-native'
 import { useState } from 'react'
 import { useNavigation } from '@react-navigation/native'
-
 import { firebase } from './config'
-
 import React from 'react'
 
 const Login = () => {
@@ -14,21 +12,19 @@ const Login = () => {
     loginUser = async (email, pwd) => {
         try {
             await firebase.auth().signInWithEmailAndPassword(email, pwd);
-            console.log("Hogaya :/")
+            console.log("Hogaya :/");
         }
         catch (error) {
-            alert(error.message)
+            alert(error.message);
         } 
     }
-
-
-
+    
     return (
         <View
             style={styles.container}
         >
 
-            <View style={{ marginTop: 40 }}>
+            <View style={{ marginTop: 40, alignItems:"center" }}>
                 <TextInput
                     style={styles.textInput}
                     placeholder="Email"
@@ -54,7 +50,9 @@ const Login = () => {
                     <Text
                     style={{
                         fontSize:26,
-                        textAlign:"center"
+                        textAlign:"center",
+                        alignItems:"center",
+                        justifyContent:"center"
                     }}
                     >
                         Login
@@ -69,7 +67,7 @@ const styles = StyleSheet.create({
     container: {
         flex:1,
         alignItems:'center',
-        marginTop:100
+        marginTop:100,
     },
     loginText: {
         fontWeight: "bold",

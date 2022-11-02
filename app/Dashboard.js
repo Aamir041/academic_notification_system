@@ -4,7 +4,7 @@ import WeeklyCalendar from 'react-native-weekly-calendar';
 
 export const Dashboard = () => {
   const sampleEvents = [
-    { 'start': '2022-10-30 09:00:00', 'duration': '00:20:00', 'note': 'Walk my dog' },
+    { 'start': '2022-10-30 09:00:00', 'duration': '00:20:00', 'note': 'Mobile Communication Assignment Submission' },
     { 'start': '2022-10-31 14:00:00', 'duration': '01:00:00', 'note': 'Doctor\'s appointment' },
     { 'start': '2022-11-01 08:00:00', 'duration': '00:30:00', 'note': 'Morning exercise' },
     { 'start': '2022-11-01 14:00:00', 'duration': '02:00:00', 'note': 'Meeting with client' },
@@ -23,13 +23,3 @@ export const Dashboard = () => {
     </View>
   );
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   }
-// });
-// export default Dashboard;

@@ -3,8 +3,8 @@ import React from 'react'
 
 const Header = (props) => {
   return (
-    <View>
-      <Text>Academic Notification App</Text>
+    <View style={{ justifyContent: 'center', alignItems: 'center'}}>
+      <Text style={{ justifyContent: 'center', alignItems: 'center',marginLeft:"27%"}}>Academic Notification App</Text>
     </View>
   )
 }

@@ -1,5 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+// import { StatusBar } from 'expo-status-bar';
+// import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { useState, useEffect, Suspense } from 'react';
@@ -37,7 +37,7 @@ function App() {
           name="Login"
           component={Login}
           options={{
-            headerTitle: () => <Header name="AS Devs" />,
+            headerTitle: () => <Header />,
             headerStyle: {
               height: 150,
               borderBottomLeftRadius: 50,
@@ -45,8 +45,7 @@ function App() {
               backgroundColor: "#00e4d0",
               shadowColor: "#000",
               elevation: 25,
-              alignItems:"center"
-            }
+            },
           }}
         />
 
@@ -61,7 +60,6 @@ function App() {
               borderBottomRightRadius: 50,
               backgroundColor: "#00e4d0",
               shadowColor: "#000",
-              elevation: 25
             }
           }}
         />
@@ -78,8 +76,6 @@ function App() {
           headerTitle: () => <Header name="AS Devs" />,
           headerStyle: {
             height: 150,
-            borderBottomLeftRadius: 50,
-            borderBottomRightRadius: 50,
             backgroundColor: "#00e4d0",
             shadowColor: "#000",
             elevation: 25
@@ -87,7 +83,6 @@ function App() {
         }}
       />
     </Stack.Navigator>
-    // console.log("Success")
   )
 }
 
@@ -95,17 +90,7 @@ function App() {
 export default () => {
   return(
     <NavigationContainer>
-      {/* <Suspense fallback={<Text>Loading ...</Text>} */}
       <App />
     </NavigationContainer>
   )
 }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });
