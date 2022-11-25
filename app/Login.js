@@ -12,7 +12,7 @@ const Login = () => {
     loginUser = async (email, pwd) => {
         try {
             await firebase.auth().signInWithEmailAndPassword(email, pwd);
-            console.log("Hogaya :/");
+            console.log("User Connected");
         }
         catch (error) {
             alert(error.message);

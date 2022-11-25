@@ -24,7 +24,7 @@ function App() {
 
   useEffect(() => {
     const subscriber = firebase.auth().onAuthStateChanged(onAuthStateChanged);
-    console.log("Hum User Effect se");
+    // console.log("Hum User Effect se");
     return subscriber;
   }, []); 
 
