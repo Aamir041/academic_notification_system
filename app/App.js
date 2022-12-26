@@ -7,7 +7,7 @@ import { firebase } from './config.js';
 import Header from './Header';
 import Login from './Login';
 import { Dashboard } from "./Dashboard"
-import Registration from './Registration';
+
 
 
 const Stack = createStackNavigator();
@@ -46,21 +46,6 @@ function App() {
               shadowColor: "#000",
               elevation: 25,
             },
-          }}
-        />
-
-        <Stack.Screen
-          name="Registration"
-          component={Registration}
-          options={{
-            headerTitle: () => <Header name="AS Devs" />,
-            headerStyle: {
-              height: 150,
-              borderBottomLeftRadius: 50,
-              borderBottomRightRadius: 50,
-              backgroundColor: "#00e4d0",
-              shadowColor: "#000",
-            }
           }}
         />
       </Stack.Navigator>
